@@ -15,7 +15,7 @@ caso queira um bot apenas para o envio de mensagens em massa para contatos aleat
 <br/><br/>
 <div align=center>
   
-  `obs: é normal na primeira executação baixar um pacote de algums bytes como na imagem abaixo`
+  `obs: é normal na primeira executação baixar um pacote de alguns bytes como na imagem abaixo`
   
   <img src="download.png" width="70%"/>
 </div>
