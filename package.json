@@ -1,0 +1,25 @@
+{
+  "name": "whatsvenom",
+  "version": "1.0.0",
+  "description": "bot for whatsapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosallberto/whatsvenom.git"
+  },
+  "author": "Carlos Alberto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlosallberto/whatsvenom/issues"
+  },
+  "homepage": "https://github.com/carlosallberto/whatsvenom#readme",
+  "dependencies": {
+    "axios": "^1.2.1",
+    "colors": "^1.4.0",
+    "node-nlp": "^4.24.0",
+    "venom-bot": "^4.3.7"
+  }
+}

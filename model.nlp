@@ -1,0 +1,873 @@
+{
+  "settings": {
+    "languages": [
+      "pt"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "pt"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "pt": {
+        "settings": {
+          "locale": "pt",
+          "trainByDomain": false,
+          "tag": "domain-manager-pt",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "bom,dia": {
+            "intent": "SAUDAÇÃO",
+            "domain": "default"
+          },
+          "boa,tard": {
+            "intent": "SAUDAÇÃO",
+            "domain": "default"
+          },
+          "boa,noit": {
+            "intent": "SAUDAÇÃO",
+            "domain": "default"
+          },
+          "bom,tud": {
+            "intent": "SAUDAÇÃO",
+            "domain": "default"
+          },
+          "bem,tud": {
+            "intent": "SAUDAÇÃO",
+            "domain": "default"
+          },
+          "ola": {
+            "intent": "SAUDAÇÃO",
+            "domain": "default"
+          },
+          "oi": {
+            "intent": "SAUDAÇÃO",
+            "domain": "default"
+          },
+          "eai": {
+            "intent": "SAUDAÇÃO",
+            "domain": "default"
+          },
+          "opa": {
+            "intent": "SAUDAÇÃO",
+            "domain": "default"
+          },
+          "aob": {
+            "intent": "SAUDAÇÃO",
+            "domain": "default"
+          },
+          "fech,hor,que": {
+            "intent": "HORARIO",
+            "domain": "default"
+          },
+          "abre,hor,que": {
+            "intent": "HORARIO",
+            "domain": "default"
+          },
+          "horari,que,trabalh,voc": {
+            "intent": "HORARIO",
+            "domain": "default"
+          },
+          "abert,esta": {
+            "intent": "HORARIO",
+            "domain": "default"
+          },
+          "enderec,o,qual": {
+            "intent": "ENDEREÇO",
+            "domain": "default"
+          },
+          "de,local,o,qual,trabalh,voc": {
+            "intent": "ENDEREÇO",
+            "domain": "default"
+          },
+          "onde,trabalh,voc": {
+            "intent": "ENDEREÇO",
+            "domain": "default"
+          },
+          "a,empres,fic,onde": {
+            "intent": "ENDEREÇO",
+            "domain": "default"
+          },
+          "atendent,com,fal": {
+            "intent": "ATENDENTE",
+            "domain": "default"
+          },
+          "antendent,contat,do": {
+            "intent": "ATENDENTE",
+            "domain": "default"
+          },
+          "com,de,fal,pesso,uma,verdad": {
+            "intent": "ATENDENTE",
+            "domain": "default"
+          },
+          "atendent,do,numer": {
+            "intent": "ATENDENTE",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "SAUDAÇÃO": "default",
+          "HORARIO": "default",
+          "ENDEREÇO": "default",
+          "ATENDENTE": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "bom dia",
+            "intent": "SAUDAÇÃO"
+          },
+          {
+            "domain": "default",
+            "utterance": "boa tarde",
+            "intent": "SAUDAÇÃO"
+          },
+          {
+            "domain": "default",
+            "utterance": "boa noite",
+            "intent": "SAUDAÇÃO"
+          },
+          {
+            "domain": "default",
+            "utterance": "tudo bom",
+            "intent": "SAUDAÇÃO"
+          },
+          {
+            "domain": "default",
+            "utterance": "tudo bem?",
+            "intent": "SAUDAÇÃO"
+          },
+          {
+            "domain": "default",
+            "utterance": "olá",
+            "intent": "SAUDAÇÃO"
+          },
+          {
+            "domain": "default",
+            "utterance": "oi",
+            "intent": "SAUDAÇÃO"
+          },
+          {
+            "domain": "default",
+            "utterance": "eai",
+            "intent": "SAUDAÇÃO"
+          },
+          {
+            "domain": "default",
+            "utterance": "opa",
+            "intent": "SAUDAÇÃO"
+          },
+          {
+            "domain": "default",
+            "utterance": "aoba",
+            "intent": "SAUDAÇÃO"
+          },
+          {
+            "domain": "default",
+            "utterance": "que horas fecha?",
+            "intent": "HORARIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "que horas abre?",
+            "intent": "HORARIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "que horario vocês trabalham?",
+            "intent": "HORARIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "esta aberto?",
+            "intent": "HORARIO"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual o endereço?",
+            "intent": "ENDEREÇO"
+          },
+          {
+            "domain": "default",
+            "utterance": "qual o local de trabalho de vocês?",
+            "intent": "ENDEREÇO"
+          },
+          {
+            "domain": "default",
+            "utterance": "onde vocês trabalham?",
+            "intent": "ENDEREÇO"
+          },
+          {
+            "domain": "default",
+            "utterance": "onde fica a empresa?",
+            "intent": "ENDEREÇO"
+          },
+          {
+            "domain": "default",
+            "utterance": "falar com atendente",
+            "intent": "ATENDENTE"
+          },
+          {
+            "domain": "default",
+            "utterance": "contato do antendente",
+            "intent": "ATENDENTE"
+          },
+          {
+            "domain": "default",
+            "utterance": "falar com uma pessoa de verdade",
+            "intent": "ATENDENTE"
+          },
+          {
+            "domain": "default",
+            "utterance": "numero do atendente",
+            "intent": "ATENDENTE"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "pt",
+              "tag": "nlu-pt",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "bom": 1,
+              "dia": 1,
+              "boa": 1,
+              "tard": 1,
+              "noit": 1,
+              "tud": 1,
+              "bem": 1,
+              "ola": 1,
+              "oi": 1,
+              "eai": 1,
+              "opa": 1,
+              "aob": 1,
+              "que": 1,
+              "hor": 1,
+              "fech": 1,
+              "abre": 1,
+              "horari": 1,
+              "voc": 1,
+              "trabalh": 1,
+              "esta": 1,
+              "abert": 1,
+              "qual": 1,
+              "o": 1,
+              "enderec": 1,
+              "local": 1,
+              "de": 1,
+              "onde": 1,
+              "fic": 1,
+              "a": 1,
+              "empres": 1,
+              "fal": 1,
+              "com": 1,
+              "atendent": 1,
+              "contat": 1,
+              "do": 1,
+              "antendent": 1,
+              "uma": 1,
+              "pesso": 1,
+              "verdad": 1,
+              "numer": 1
+            },
+            "intents": {
+              "SAUDAÇÃO": 1,
+              "HORARIO": 1,
+              "ENDEREÇO": 1,
+              "ATENDENTE": 1
+            },
+            "intentFeatures": {
+              "SAUDAÇÃO": {
+                "bom": 1,
+                "dia": 1,
+                "boa": 1,
+                "tard": 1,
+                "noit": 1,
+                "tud": 1,
+                "bem": 1,
+                "ola": 1,
+                "oi": 1,
+                "eai": 1,
+                "opa": 1,
+                "aob": 1
+              },
+              "HORARIO": {
+                "que": 1,
+                "hor": 1,
+                "fech": 1,
+                "abre": 1,
+                "horari": 1,
+                "voc": 1,
+                "trabalh": 1,
+                "esta": 1,
+                "abert": 1
+              },
+              "ENDEREÇO": {
+                "qual": 1,
+                "o": 1,
+                "enderec": 1,
+                "local": 1,
+                "de": 1,
+                "trabalh": 1,
+                "voc": 1,
+                "onde": 1,
+                "fic": 1,
+                "a": 1,
+                "empres": 1
+              },
+              "ATENDENTE": {
+                "fal": 1,
+                "com": 1,
+                "atendent": 1,
+                "contat": 1,
+                "do": 1,
+                "antendent": 1,
+                "uma": 1,
+                "pesso": 1,
+                "de": 1,
+                "verdad": 1,
+                "numer": 1
+              }
+            },
+            "featuresToIntent": {
+              "bom": [
+                "SAUDAÇÃO"
+              ],
+              "dia": [
+                "SAUDAÇÃO"
+              ],
+              "boa": [
+                "SAUDAÇÃO"
+              ],
+              "tard": [
+                "SAUDAÇÃO"
+              ],
+              "noit": [
+                "SAUDAÇÃO"
+              ],
+              "tud": [
+                "SAUDAÇÃO"
+              ],
+              "bem": [
+                "SAUDAÇÃO"
+              ],
+              "ola": [
+                "SAUDAÇÃO"
+              ],
+              "oi": [
+                "SAUDAÇÃO"
+              ],
+              "eai": [
+                "SAUDAÇÃO"
+              ],
+              "opa": [
+                "SAUDAÇÃO"
+              ],
+              "aob": [
+                "SAUDAÇÃO"
+              ],
+              "que": [
+                "HORARIO"
+              ],
+              "hor": [
+                "HORARIO"
+              ],
+              "fech": [
+                "HORARIO"
+              ],
+              "abre": [
+                "HORARIO"
+              ],
+              "horari": [
+                "HORARIO"
+              ],
+              "voc": [
+                "HORARIO",
+                "ENDEREÇO"
+              ],
+              "trabalh": [
+                "HORARIO",
+                "ENDEREÇO"
+              ],
+              "esta": [
+                "HORARIO"
+              ],
+              "abert": [
+                "HORARIO"
+              ],
+              "qual": [
+                "ENDEREÇO"
+              ],
+              "o": [
+                "ENDEREÇO"
+              ],
+              "enderec": [
+                "ENDEREÇO"
+              ],
+              "local": [
+                "ENDEREÇO"
+              ],
+              "de": [
+                "ENDEREÇO",
+                "ATENDENTE"
+              ],
+              "onde": [
+                "ENDEREÇO"
+              ],
+              "fic": [
+                "ENDEREÇO"
+              ],
+              "a": [
+                "ENDEREÇO"
+              ],
+              "empres": [
+                "ENDEREÇO"
+              ],
+              "fal": [
+                "ATENDENTE"
+              ],
+              "com": [
+                "ATENDENTE"
+              ],
+              "atendent": [
+                "ATENDENTE"
+              ],
+              "contat": [
+                "ATENDENTE"
+              ],
+              "do": [
+                "ATENDENTE"
+              ],
+              "antendent": [
+                "ATENDENTE"
+              ],
+              "uma": [
+                "ATENDENTE"
+              ],
+              "pesso": [
+                "ATENDENTE"
+              ],
+              "verdad": [
+                "ATENDENTE"
+              ],
+              "numer": [
+                "ATENDENTE"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "pt",
+                "tag": "nlu-pt",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "bom",
+                "dia",
+                "boa",
+                "tard",
+                "noit",
+                "tud",
+                "bem",
+                "ola",
+                "oi",
+                "eai",
+                "opa",
+                "aob",
+                "que",
+                "hor",
+                "fech",
+                "abre",
+                "horari",
+                "voc",
+                "trabalh",
+                "esta",
+                "abert",
+                "qual",
+                "o",
+                "enderec",
+                "local",
+                "de",
+                "onde",
+                "fic",
+                "a",
+                "empres",
+                "fal",
+                "com",
+                "atendent",
+                "contat",
+                "do",
+                "antendent",
+                "uma",
+                "pesso",
+                "verdad",
+                "numer"
+              ],
+              "intents": [
+                "SAUDAÇÃO",
+                "HORARIO",
+                "ENDEREÇO",
+                "ATENDENTE"
+              ],
+              "perceptrons": [
+                [
+                  3.0266716480255127,
+                  2.594736337661743,
+                  3.886467456817627,
+                  1.9517797231674194,
+                  1.943957805633545,
+                  3.0577571392059326,
+                  2.6415133476257324,
+                  5.718049049377441,
+                  5.669684886932373,
+                  5.619994640350342,
+                  5.569061279296875,
+                  5.516964912414551,
+                  -3.8541951179504395,
+                  -3.115173101425171,
+                  -1.582822322845459,
+                  -1.5316495895385742,
+                  -0.639744222164154,
+                  -2.6328470706939697,
+                  -2.6328470706939697,
+                  -4.216126441955566,
+                  -4.216126441955566,
+                  -2.9733710289001465,
+                  -2.9733710289001465,
+                  -2.548102617263794,
+                  -0.35098958015441895,
+                  -1.1547080278396606,
+                  -3.232370376586914,
+                  -1.76022469997406,
+                  -1.76022469997406,
+                  -1.76022469997406,
+                  -2.592430353164673,
+                  -2.592430353164673,
+                  -3.299776554107666,
+                  -2.3484251499176025,
+                  -3.7862672805786133,
+                  -2.3484251499176025,
+                  -0.7293039560317993,
+                  -0.7293039560317993,
+                  -0.7293039560317993,
+                  -1.4341390132904053,
+                  8.518482296666818
+                ],
+                [
+                  -0.8597915172576904,
+                  -0.5138752460479736,
+                  -0.9467081427574158,
+                  -0.47130993008613586,
+                  -0.4401033818721771,
+                  -0.8169454336166382,
+                  -0.47698402404785156,
+                  -1.0066840648651123,
+                  -0.9975293874740601,
+                  -0.9878960847854614,
+                  -0.9780468344688416,
+                  -0.9679976105690002,
+                  7.644467353820801,
+                  3.7746076583862305,
+                  1.8556081056594849,
+                  1.9205106496810913,
+                  3.8664188385009766,
+                  0.8422905206680298,
+                  0.8422905206680298,
+                  6.613097190856934,
+                  6.613097190856934,
+                  -1.0299031734466553,
+                  -1.0299031734466553,
+                  -0.2825477421283722,
+                  -0.6468501091003418,
+                  -0.8362568616867065,
+                  -2.6049087047576904,
+                  -0.24913614988327026,
+                  -0.24913614988327026,
+                  -0.24913614988327026,
+                  -0.5124721527099609,
+                  -0.5124721527099609,
+                  -0.6646697521209717,
+                  -0.42257657647132874,
+                  -0.7480637431144714,
+                  -0.42257657647132874,
+                  -0.1327425092458725,
+                  -0.1327425092458725,
+                  -0.1327425092458725,
+                  -0.2796745300292969,
+                  1.0015869851794297
+                ],
+                [
+                  -0.6828611493110657,
+                  -0.3913849890232086,
+                  -0.7379420399665833,
+                  -0.35271570086479187,
+                  -0.33598455786705017,
+                  -0.6408942937850952,
+                  -0.3550421893596649,
+                  -0.75632244348526,
+                  -0.7494022846221924,
+                  -0.7423195242881775,
+                  -0.7350856065750122,
+                  -0.7277111411094666,
+                  -3.1466734409332275,
+                  -0.2426132708787918,
+                  -0.12423498183488846,
+                  -0.07671872526407242,
+                  -2.871650457382202,
+                  2.7128965854644775,
+                  2.7128965854644775,
+                  -0.37952595949172974,
+                  -0.37952595949172974,
+                  4.420783042907715,
+                  4.420783042907715,
+                  4.4685235023498535,
+                  -0.05526158586144447,
+                  -0.520279049873352,
+                  7.658977031707764,
+                  1.9841066598892212,
+                  1.9841066598892212,
+                  1.9841066598892212,
+                  -0.7160207033157349,
+                  -0.7160207033157349,
+                  -0.5431351065635681,
+                  -0.3289432227611542,
+                  -0.6306323409080505,
+                  -0.3289432227611542,
+                  -0.3995567858219147,
+                  -0.3995567858219147,
+                  -0.3995567858219147,
+                  -0.23432616889476776,
+                  0.7792003650182351
+                ],
+                [
+                  -0.8544273972511292,
+                  -0.46960824728012085,
+                  -0.9238710999488831,
+                  -0.4501168727874756,
+                  -0.40356454253196716,
+                  -0.8001648783683777,
+                  -0.4300858974456787,
+                  -0.8314574956893921,
+                  -0.8242210745811462,
+                  -0.8177914619445801,
+                  -0.8111369013786316,
+                  -0.8042708039283752,
+                  -0.6167109608650208,
+                  -0.4747909903526306,
+                  -0.2318328469991684,
+                  -0.19310088455677032,
+                  -0.09015974402427673,
+                  -0.5896402597427368,
+                  -0.5896402597427368,
+                  -0.4657672941684723,
+                  -0.4657672941684723,
+                  -0.581565260887146,
+                  -0.581565260887146,
+                  -0.20894737541675568,
+                  -0.31279587745666504,
+                  1.009858250617981,
+                  -0.36475419998168945,
+                  -0.2500399351119995,
+                  -0.2500399351119995,
+                  -0.2500399351119995,
+                  4.150369644165039,
+                  4.150369644165039,
+                  5.108623027801514,
+                  3.6958343982696533,
+                  6.042857646942139,
+                  3.6958343982696533,
+                  1.3875529766082764,
+                  1.3875529766082764,
+                  1.3875529766082764,
+                  2.3466506004333496,
+                  0.8236791733665926
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "pt",
+        "bom dia"
+      ],
+      [
+        "pt",
+        "boa tarde"
+      ],
+      [
+        "pt",
+        "boa noite"
+      ],
+      [
+        "pt",
+        "tudo bom"
+      ],
+      [
+        "pt",
+        "tudo bem?"
+      ],
+      [
+        "pt",
+        "olá"
+      ],
+      [
+        "pt",
+        "oi"
+      ],
+      [
+        "pt",
+        "eai"
+      ],
+      [
+        "pt",
+        "opa"
+      ],
+      [
+        "pt",
+        "aoba"
+      ],
+      [
+        "pt",
+        "que horas fecha?"
+      ],
+      [
+        "pt",
+        "que horas abre?"
+      ],
+      [
+        "pt",
+        "que horario vocês trabalham?"
+      ],
+      [
+        "pt",
+        "esta aberto?"
+      ],
+      [
+        "pt",
+        "qual o endereço?"
+      ],
+      [
+        "pt",
+        "qual o local de trabalho de vocês?"
+      ],
+      [
+        "pt",
+        "onde vocês trabalham?"
+      ],
+      [
+        "pt",
+        "onde fica a empresa?"
+      ],
+      [
+        "pt",
+        "falar com atendente"
+      ],
+      [
+        "pt",
+        "contato do antendente"
+      ],
+      [
+        "pt",
+        "falar com uma pessoa de verdade"
+      ],
+      [
+        "pt",
+        "numero do atendente"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "pt": {
+        "SAUDAÇÃO": [
+          {
+            "answer": "Olá, sou um BOT, qual sua duvida?"
+          },
+          {
+            "answer": "Olá, sou um BOT que gosta de tirar duvidas, qual a sua?"
+          }
+        ],
+        "HORARIO": [
+          {
+            "answer": "estamos abertos de segunda a sexta \ndas 00:00 até 00:00"
+          },
+          {
+            "answer": "trabalhamos de segunda a sexta \ndas 00:00 até 00:00"
+          }
+        ],
+        "ENDEREÇO": [
+          {
+            "answer": "entendido, vou te mandar o endereço"
+          },
+          {
+            "answer": "estamos nesse endereço abaixo"
+          },
+          {
+            "answer": "estamos aguardando sua visita"
+          }
+        ],
+        "ATENDENTE": [
+          {
+            "answer": "entendido, vou te mandar o contato do atendente"
+          },
+          {
+            "answer": "contato do meu humano"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}
