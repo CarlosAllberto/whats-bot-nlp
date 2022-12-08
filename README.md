@@ -6,11 +6,18 @@
 
 <h3 align=center>Bot de respostas para WhatsApp usando Node.js</h3>
 
-WhatsBotNlp é um script em `Node.js` para o envio de resposta inteligente com IA usando ´NLP.js´.
+WhatsBotNlp é um script em `Node.js` para o envio de resposta inteligente com IA usando `NLP.js`.<br/>
 caso queira um bot apenas para o envio de mensagens em massa para contatos aleatorios recomendo dar uma olhada em <a href="https://github.com/carlosalberto/WhatsBot">WhatsBot</a>.
 
 <div align=center>
   <img src="img.png" width="70%"/>
+</div>
+<br/><br/>
+<div align=center>
+  
+  `obs: é normal na primeira executação baixar um pacote de algums bytes como na imagem abaixo`
+  
+  <img src="download.png" width="70%"/>
 </div>
 
 ## Instalação:
@@ -52,12 +59,6 @@ Em uma linha:
 ```
 git clone https://github.com/CarlosAllberto/WhatsBotNlp && cd WhatsBotNlp && sudo pacman -S nodejs npm -y && npm install && node index.js
 ```
-
-`obs: é normal na primeira executação baixar um pacote de algums bytes como na imagem abaixo`
-
-<div align=center>
-  <img src="download.png" width="70%"/>
-</div>
 
 ## License
 
